@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/edit_text_background"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="emailAddress"
+            android:hint="@string/email"
+            android:textColorHint="@color/dune"
+            android:background="@drawable/edit_text_background"
+            android:inputType="textEmailAddress"
+            tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:autofillHints="password"
+            android:hint="@string/password"
+            android:textColorHint="@color/dune"
+            android:background="@drawable/edit_text_background"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/editConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:autofillHints="Confirm Password"
+            android:hint="@string/confirm_password"
+            android:textColorHint="@color/dune"
+            android:background="@drawable/edit_text_background"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/buttonSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/sign_up"
+            android:backgroundTint="@color/carrot_orange"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/text_line"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textLogin"
+                android:text="@string/login"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/carrot_orange"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Login - SignUp</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="text_line">Already have an account?\t\t</string>
+    <string name="login">Login</string>
+    <string name="new_login">Don\'t have an account? \t</string>
+    <string name="logout">Logout</string>
+</resources>
